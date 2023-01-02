@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+}
+
+.figura {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: red;
+    animation-name: animacia;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes animacia {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 350px;
+        top: 0px;
+    }
+
+    50% {
+        left: 350px;
+        top: 350px;
+    }
+
+    75% {
+
+        bottom: 0px;
+        left: 0px;
+    }
+
+    100% {
+        left: 0px;
+        bottom: 350px;
+    }
+
+
+
+}
